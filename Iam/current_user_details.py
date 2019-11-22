@@ -1,0 +1,12 @@
+import boto3
+iam = boto3.resource("iam")
+print(iam.CurrentUser().user)
+print(iam.CurrentUser().user_id)
+print(iam.CurrentUser().user_name)
+print(iam.CurrentUser().arn)
+print(iam.CurrentUser().create_date)
+print(iam.CurrentUser().path)
+print(iam.CurrentUser().access_keys)
+print(iam.CurrentUser().mfa_devices)
+print(iam.CurrentUser().permissions_boundary)
+print(iam.CurrentUser().password_last_used)

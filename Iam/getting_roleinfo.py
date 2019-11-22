@@ -1,0 +1,13 @@
+import boto3
+RoleName = input('enter the role name : ')
+iam = boto3.resource("iam")
+role = iam.Role('%s'%RoleName)
+print(role.arn)
+print(role.create_date)
+print(role.description)
+print(role.path)
+print(role.role_id)
+print(role.role_name)
+print(role.tags)
+print(role.attached_policies)
+print(role.policies)
